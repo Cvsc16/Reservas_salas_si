@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/consultaIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o ID"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/consultaProfessorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Professor por ID" />
+
+    <Button
+        android:id="@+id/consultaSalaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Sala por ID" />
+
+    <Button
+        android:id="@+id/consultaGeralProfessoresButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Todos os Professores" />
+
+    <Button
+        android:id="@+id/consultaGeralSalasButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Todas as Salas" />
+
+    <TextView
+        android:id="@+id/resultTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:paddingTop="16dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resultRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Erro"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:paddingTop="200dp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
