@@ -1,0 +1,19 @@
+# Ignore o ambiente virtual
+venv/
+
+# Arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de logs
+*.log
+
+# Arquivos do Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Configurações do IDE
+.vscode/
+.idea/
